@@ -1,7 +1,18 @@
 import "./App.css";
+import CreatePage from "./setcard";
+
+
 
 function App() {
-  return <div className="App">{/* Start coding here */}</div>;
+  return (
+    <div>
+     < CreatePage/>
+    </div>
+
+
+
+
+  )
 }
 
 export default App;
