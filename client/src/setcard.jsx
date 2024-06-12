@@ -35,18 +35,19 @@ function CreatePage() {
       <div>
         {location.map((items, index) => {
           return (
-            <Card
+            <Card key={index}
               img={items.photos[0]}
               topic={items.title}
               description={items.description}
               url={items.url}
-              tag1={items.tags[0]}
+              tags={items.tags.join(" ")}
               img1={items.photos[1]}
               img2={items.photos[2]}
               img3={items.photos[3]}
             />
           );
         })}
+
       </div>
     </div>
   );
